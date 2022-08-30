@@ -1,0 +1,24 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    function desenhaquadrado(x,y,z) {
+
+
+
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = z;
+        pincel.fillRect(x, y, 50, 50);
+        pincel.strokeStyle = 'black';
+        pincel.strokeRect(x, y, 50, 50);
+
+    }
+
+    desenhaquadrado(0,0,'vermelho');
+    desenhaquadrado(0,50 , 'green');
+    desenhaquadrado(0,100 , 'yellow');
+    
+    
+</script>
