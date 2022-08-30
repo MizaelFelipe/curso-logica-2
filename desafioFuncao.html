@@ -1,0 +1,36 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+    function desenhaQuadrado(x, y, tamanho, cor) {
+
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = cor;
+        pincel.fillRect(x, y, 50, 50);
+        pincel.strokeStyle = 'yellow';
+        pincel.strokeRect(x, y, 50, 50);
+
+
+        // aqui precisamos usar fillRect, strokeRect, etc 
+    }
+    var x = 0;
+    var y = 0;
+
+    while (x < 200) {
+
+        desenhaQuadrado(x, y, 'blue');
+
+        x = x + 50;
+        y = y + 0;
+
+        
+    }
+
+    desenhaQuadrado(350, 50, 100, 'white');
+
+</script>
